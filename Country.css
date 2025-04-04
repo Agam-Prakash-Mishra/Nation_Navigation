@@ -1,0 +1,119 @@
+*{
+   
+    box-sizing: border-box; /* ❓ */
+}
+body.dark{
+    --background-color:hsl(207, 26%, 17%);
+    --text-color: rgb(255, 255, 255);
+    --elements-color: hsl(209, 23%, 22%);
+}
+body{
+    --background-color:white;
+    --text-color: black;
+    --elements-color: white;
+    margin: 0;
+    font-family: Nunito Sans, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+main{
+    margin-inline: 64px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-content{
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 24px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0 , .2);
+    font-weight: 750;
+    background-color: var(--elements-color);
+    transition: all 0.3s ease-in-out ;
+}
+.header-content p{
+    cursor: pointer;
+}
+
+#backBtn{
+    border: white;
+    padding-inline: 44px;
+    padding-block: 10px;
+    border-radius: 4px;
+    margin-top: 90px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0 , .3);
+    background-color: var(--elements-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out ;
+    /* transition: all 10sec ease-in-out; */
+}
+/* #backBtn:active{
+    transform: scale(.1);
+} */
+
+#flag{
+    /* height: 35vh; ⭐*/
+    width: 33vw;
+    box-shadow: 1px 1px 15px 8px rgba(0, 0, 0 , .3); 
+}
+/* #flag:hover{
+    /* height: 35vh; ⭐*/
+    /* width: 33vw;
+    box-shadow: 1px 1px 25px 3px rgba(0, 0, 0 , 1);
+    transform: scale(1.04); 
+} */ 
+
+#country-detail{
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
+    gap: 64px;
+    margin-block: 100px;
+    /* transition: all 5s ease-out; */
+}
+
+.detail-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    column-gap: 74px;
+    max-height: 180px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out ;
+}
+.detail-text p{
+    margin: 0;
+}
+
+#border-countries{
+    margin-top: 60px;
+}
+#border-countries a{
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin:4px;
+    margin-top: 4px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0 , .3);
+    font-size: 15px;
+    background-color: var(--elements-color);
+    /* transition: all 0.3s ease-in-out ; */
+}
+
+/* @media(max-width: 800px){
+    .country-details{
+        background-color: pink;
+        display: flexbox;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 16px;
+    }
+    .detail-text{
+        max-height: unset;
+    }
+} */
