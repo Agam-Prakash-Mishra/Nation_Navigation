@@ -1,7 +1,7 @@
 let countries;
 
 function renderAllCountries(){
-    fetch("https://restcountries.com/v3.1/all")
+    fetch("https://restcountries.com/v3.1/all?fields=name,population,region,capital,flags")
     .then( res=> res.json())
     .then( param_countries =>{
         countries = param_countries
@@ -125,5 +125,6 @@ if(themeMode == "dark"){
     document.body.classList.add("dark");
     themeToggle.innerHTML = `<i class="fa-solid fa-sun"></i>&nbsp;&nbsp; Light Mode`
 }
+
 
 
