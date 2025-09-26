@@ -55,11 +55,6 @@ A responsive web application that allows users to explore countries worldwide wi
 - Handles errors gracefully with user feedback  
 - Efficient data loading with proper error handling  
 
-### Responsive Design
-- Flexbox and CSS Grid layouts  
-- Mobile-friendly interface  
-- Consistent spacing and typography  
-
 ---
 
 ## Preview
